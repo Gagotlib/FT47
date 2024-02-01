@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jasmine",
-    "start": "jasmine-browser-runner"
+    "test-browser": "jasmine-browser-runner serve"
   },
   "keywords": [],
   "author": "",
