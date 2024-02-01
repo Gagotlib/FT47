@@ -16,9 +16,11 @@ class Repository {
     getAllActivities() {
         return this.activities
     }
-    createActivity(object) {
-        this.id ++
-        const activity = new Activity({ id: this.id, ...object })
+    createActivity(act) {
+        this.id++
+        // act -> {title, descr, img}
+        // {id: this.id, }
+        const activity = new Activity()
         
         this.activities.push(activity)
     }
