@@ -28,53 +28,47 @@
         <article>
           <ul>
             <li>
-                <h3>HTML5</h3>
-                <img src="./assets/images/html_logo.png" alt="image HTML">
+              <h3>HTML5</h3>
+              <img src="./assets/images/html_logo.png" alt="image HTML" />
             </li>
             <li>
-                <h3>
-                    CSS3
-                </h3>
-                <img src="./assets/images/css_logo.png" alt="image CSS">
+              <h3>CSS3</h3>
+              <img src="./assets/images/css_logo.png" alt="image CSS" />
             </li>
-            <li><h3>
-                JavaScript
-            </h3>
-        <img src="./assets/images/js_logo.png" alt="image JavaScript"></li>
+            <li>
+              <h3>JavaScript</h3>
+              <img src="./assets/images/js_logo.png" alt="image JavaScript" />
+            </li>
           </ul>
         </article>
       </section>
       <section id="favActivities">
         <h2>Mis Actividades Favoritas</h2>
-        <form id="form" >
-            <div>
-                <label for="text">
-                    Titulo: 
-                  </label>
-                  <input type="text" id="text" placeholder="Leer">
-            </div>
-            <div>
-                <label for="description">
-                    Descripcion: 
-                  </label>
-                  <textarea name="description" id="description" rows="2"
-                  placeholder="Me gusta la lectura, en particular el genero de misterio"></textarea>
-            </div>
-            <div>
-                <label for="imgUrl">
-                    Url de la imagen: 
-                  </label>
-                  <input type="imgUrl" id="imgUrl" placeholder="https://google.com">
-            </div>
-            <input type="submit" value="Enviar" id="add">
+        <form id="form">
+          <div>
+            <label for="title"> Titulo: </label>
+            <input type="text" id="title" placeholder="Leer" />
+          </div>
+          <div>
+            <label for="description"> Descripcion: </label>
+            <textarea
+              name="description"
+              id="description"
+              rows="2"
+              placeholder="Me gusta la lectura, en particular el genero de misterio"></textarea>
+          </div>
+          <div>
+            <label for="imgUrl"> Url de la imagen: </label>
+            <input type="imgUrl" id="imgUrl" placeholder="https://google.com" />
+          </div>
+          <input type="submit" value="Enviar" id="add" />
         </form>
-        <div>
-          <span>No hay actividades</span>
-        </div>
+        <span id="noHayAct">No hay Actividades</span>
+        <div id="container"></div>
       </section>
     </main>
     <footer>
-        <p>Hecho por Felipe. Todos los derechos reservados </p>
+      <p>Hecho por Felipe. Todos los derechos reservados</p>
     </footer>
     <script src="./scripts/index.js"></script>
   </body>

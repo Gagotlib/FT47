@@ -1,5 +1,6 @@
 // const ToDoList = require("../../src/index.js");
 import ToDoList from "../../src/index.mjs";
+
 // toDoList
 
 //? 1. Debe ser una clase
@@ -10,7 +11,8 @@ import ToDoList from "../../src/index.mjs";
 
 describe("true", function () {
   it("true debe ser true", function () {
-    expect(true).toBeTruthy();
+    expect([]).toBeTruthy();
+    expect(true).toBeTrue();
   });
 });
 

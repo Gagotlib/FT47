@@ -28,23 +28,23 @@ describe("Test para la funcion suma", function () {
 });
 
 describe("Test para la funcion resta", function () {
-  it("Si se ejecuta la funcion con 4 y 2, devuelve 2", function () {
+  it("Si se ejecuta la funcion con 4 y 3, devuelve 1", function () {
     expect(resta(4, 3)).toBe(1);
   });
 
-  it("Si se ejecuta con 5 y 3, devuelve 2", function () {
+  it("Si se ejecuta con 5 y 0, devuelve 5", function () {
     expect(resta(5, 0)).toBe(5);
   });
 }); */
 
 //! Otros Matchers
 
-/* const persona = {
+const persona = {
   nombre: "Juan",
   apellido: "Perez",
 };
 
-describe("Test para el objeto persona", function () {
+/* describe("Test para el objeto persona", function () {
   it("El objeto persona debe estar definido", function () {
     expect(persona).toBeDefined();
   });
@@ -63,6 +63,8 @@ describe("Test para el objeto persona", function () {
 /* describe("Diferencias entre toBe y toEqual", function () {
   it("toBe compara si dos objetos son el mismo", function () {
     //* toBe Apunta a la misma referencia de memoria
+    // copia por valor vs copia por referencia 
+    // strni, number, booles, obj, array
     const a = { nombre: "Juan" };
     const b = { nombre: "Juan" };
     expect(a).not.toBe(b);
@@ -86,7 +88,7 @@ const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     expect(numeros.length).toBeLessThan(11);
   });
 
-  it("El elemento 0 del array debe ser distinto de 2", function () {
+  it("El primer elemento del array debe ser distinto de 2", function () {
     expect(numeros[0]).not.toBe(2);
   });
 
@@ -101,17 +103,21 @@ const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 //! Excepciones
 
-/* const funcionQueLanzaExcepcion = () => {
-  throw new Error("Error lanzado por la funcion");
+/* const funcionQueLanzaExcepcion = (edad) => {
+  if (edad < 18) {
+    throw new Error("Error lanzado por la funcion");
+  }
 };
 
 describe("Test para la funcion que lanza excepcion", function () {
   it("Debe lanzar una excepcion", function () {
-    expect(funcionQueLanzaExcepcion).toThrow();
+    expect(() => funcionQueLanzaExcepcion(17)).toThrow();
   });
 
   it("Debe lanzar una excepcion con el mensaje: 'Error lanzado por la funcion'", function () {
-    expect(funcionQueLanzaExcepcion).toThrowError("Error lanzado por la funcion");
+    expect(()=>funcionQueLanzaExcepcion(15)).toThrowError(
+      "Error lanzado por la funcion"
+    );
   });
 }); */
 
